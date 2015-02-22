@@ -2747,6 +2747,8 @@ High-power, low thermal resistance package.</description>
 <part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603"/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
+<part name="JP4" library="SparkFun-Connectors" deviceset="M06" device="SMD-FEMALE-V2"/>
 </parts>
 <sheets>
 <sheet>
@@ -2776,6 +2778,8 @@ High-power, low thermal resistance package.</description>
 <instance part="R5" gate="G$1" x="91.44" y="71.12" rot="R90"/>
 <instance part="R6" gate="G$1" x="91.44" y="55.88" rot="R90"/>
 <instance part="R4" gate="G$1" x="-7.62" y="101.6" rot="R90"/>
+<instance part="GND6" gate="1" x="88.9" y="119.38" rot="R270"/>
+<instance part="JP4" gate="G$1" x="109.22" y="111.76" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -2857,6 +2861,12 @@ High-power, low thermal resistance package.</description>
 <wire x1="165.1" y1="78.74" x2="165.1" y2="76.2" width="0.1524" layer="91"/>
 <junction x="165.1" y="78.74"/>
 </segment>
+<segment>
+<pinref part="GND6" gate="1" pin="GND"/>
+<pinref part="JP4" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="119.38" x2="104.14" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="119.38" x2="104.14" y2="116.84" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -2901,6 +2911,9 @@ High-power, low thermal resistance package.</description>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="78.74" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
 <junction x="33.02" y="81.28"/>
+<pinref part="JP4" gate="G$1" pin="3"/>
+<wire x1="104.14" y1="111.76" x2="43.18" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="111.76" x2="43.18" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -2922,13 +2935,18 @@ High-power, low thermal resistance package.</description>
 <segment>
 <pinref part="U1" gate="G$1" pin="PB1(MISO)"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="78.74" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="78.74" x2="91.44" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="78.74" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="78.74" x2="139.7" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="78.74" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="78.74" x2="142.24" y2="73.66" width="0.1524" layer="91"/>
 <junction x="139.7" y="78.74"/>
 <pinref part="JP2" gate="G$1" pin="3"/>
 <wire x1="142.24" y1="73.66" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="JP4" gate="G$1" pin="5"/>
+<wire x1="104.14" y1="106.68" x2="91.44" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="106.68" x2="91.44" y2="78.74" width="0.1524" layer="91"/>
+<junction x="91.44" y="78.74"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -2951,6 +2969,26 @@ High-power, low thermal resistance package.</description>
 <wire x1="83.82" y1="76.2" x2="91.44" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="76.2" x2="83.82" y2="71.12" width="0.1524" layer="91"/>
 <junction x="83.82" y="76.2"/>
+<pinref part="JP4" gate="G$1" pin="4"/>
+<wire x1="104.14" y1="109.22" x2="83.82" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="109.22" x2="83.82" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PB5(NRES)"/>
+<wire x1="81.28" y1="68.58" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="JP4" gate="G$1" pin="2"/>
+<wire x1="104.14" y1="114.3" x2="81.28" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="114.3" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="JP4" gate="G$1" pin="6"/>
+<pinref part="U1" gate="G$1" pin="PB0(MOSI)"/>
+<wire x1="104.14" y1="104.14" x2="76.2" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="104.14" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
