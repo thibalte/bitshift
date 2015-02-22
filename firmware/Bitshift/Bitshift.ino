@@ -1,3 +1,4 @@
+//
 // BITSHIFT
 // Thibault Brevet, 2015
 // release under the MIT license
@@ -21,24 +22,24 @@ void setup()
 
 void loop()
 {
-  
+
   // if we detect the input pin HIGH, we start the sequence
   if (digitalRead(in)){
-    
+
     // first turn on HEAT for specified time
     digitalWrite(led, HIGH);
     delay(heatTime);
     digitalWrite(led, LOW);
     delay(100);
-    
+
     // then forward SIGNAL for specififed time
     digitalWrite(out, HIGH);
     delay(sigTime);
     digitalWrite(out, LOW);
     delay(100);
   }
-  
+
   // we wait for the IN signal
   delay(10);
-  
+
 }
