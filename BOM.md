@@ -11,6 +11,7 @@
 | 1 | | 0805 green led | 1318243
 | 1 | | 0805 red led | 2099236
 | 1 | | 0805 blue led | 2217980
-| 1 | | 0805 0.1uF capacitor | 1856468
+| 1 | | 0805 0.1uF ceramic capacitor | 1856468
+| 1 | | 0805 1uF ceramic capacitor | 1816837
 | 2 | BG301-06-A-0540-L-B | male smd header 6-pin | 2084270
 | 1 | BG300-06-A-L-A | female smd header 6-pin | 2084265
