@@ -1,7 +1,5 @@
 # component list per module
 
-[Farnell element14 reference numbers](www.farnell.com)
-
 | pieces | part reference | description | element14 part number
 -------- | -------------- | ----------- | ---------------------
 | 1 | MIC5205 | 5V voltage regulator | 1556768
