@@ -2996,9 +2996,6 @@ High-power, low thermal resistance package.</description>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="202,1,22.86,71.12,MIC5205,BP,,,,"/>
-</errors>
 </schematic>
 </drawing>
 </eagle>

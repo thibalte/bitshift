@@ -2749,6 +2749,7 @@ High-power, low thermal resistance package.</description>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="ICSP" library="SparkFun-Connectors" deviceset="M06" device="SMD-FEMALE-V2"/>
 <part name="INPUT" library="SparkFun-Connectors" deviceset="M06" device="SMD-FEMALE-V2"/>
+<part name="C2" library="SparkFun-Capacitors" deviceset="1.0UF-25V-+80/-20(0805)" device="" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -2780,6 +2781,7 @@ High-power, low thermal resistance package.</description>
 <instance part="GND6" gate="1" x="88.9" y="119.38" rot="R270"/>
 <instance part="ICSP" gate="G$1" x="109.22" y="111.76" rot="R180"/>
 <instance part="INPUT" gate="G$1" x="-27.94" y="73.66"/>
+<instance part="C2" gate="G$1" x="15.24" y="60.96" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -2822,7 +2824,8 @@ High-power, low thermal resistance package.</description>
 <segment>
 <pinref part="MIC5205" gate="G$1" pin="GND"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="5.08" y1="76.2" x2="-7.62" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="76.2" x2="0" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="0" y1="76.2" x2="-7.62" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="76.2" x2="-7.62" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="-7.62" y1="96.52" x2="-7.62" y2="81.28" width="0.1524" layer="91"/>
@@ -2834,6 +2837,10 @@ High-power, low thermal resistance package.</description>
 <pinref part="INPUT" gate="G$1" pin="5"/>
 <wire x1="-22.86" y1="81.28" x2="-22.86" y2="78.74" width="0.1524" layer="91"/>
 <junction x="-22.86" y="81.28"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="60.96" x2="0" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="0" y1="60.96" x2="0" y2="76.2" width="0.1524" layer="91"/>
+<junction x="0" y="76.2"/>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="C"/>
@@ -2904,8 +2911,9 @@ High-power, low thermal resistance package.</description>
 <segment>
 <pinref part="MIC5205" gate="G$1" pin="OUT"/>
 <pinref part="ATTINY" gate="G$1" pin="VCC"/>
-<wire x1="22.86" y1="81.28" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="81.28" x2="25.4" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="81.28" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="81.28" x2="43.18" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="81.28" x2="48.26" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="78.74" x2="43.18" y2="81.28" width="0.1524" layer="91"/>
@@ -2916,6 +2924,10 @@ High-power, low thermal resistance package.</description>
 <pinref part="ICSP" gate="G$1" pin="3"/>
 <wire x1="104.14" y1="111.76" x2="43.18" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="111.76" x2="43.18" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="60.96" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="60.96" x2="25.4" y2="81.28" width="0.1524" layer="91"/>
+<junction x="25.4" y="81.28"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -2996,6 +3008,9 @@ High-power, low thermal resistance package.</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,22.86,71.12,MIC5205,BP,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

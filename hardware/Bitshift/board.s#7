@@ -2746,6 +2746,7 @@ High-power, low thermal resistance package.</description>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603"/>
 </parts>
 <sheets>
 <sheet>
@@ -2774,6 +2775,7 @@ High-power, low thermal resistance package.</description>
 <instance part="P+3" gate="VCC" x="104.14" y="76.2"/>
 <instance part="R5" gate="G$1" x="91.44" y="71.12" rot="R90"/>
 <instance part="R6" gate="G$1" x="91.44" y="55.88" rot="R90"/>
+<instance part="R4" gate="G$1" x="-7.62" y="101.6" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -2825,6 +2827,9 @@ High-power, low thermal resistance package.</description>
 <pinref part="JP1" gate="G$1" pin="2"/>
 <wire x1="-20.32" y1="71.12" x2="-20.32" y2="68.58" width="0.1524" layer="91"/>
 <junction x="-20.32" y="68.58"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="-7.62" y1="96.52" x2="-7.62" y2="76.2" width="0.1524" layer="91"/>
+<junction x="-7.62" y="76.2"/>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="C"/>
@@ -2907,6 +2912,10 @@ High-power, low thermal resistance package.</description>
 <wire x1="-15.24" y1="93.98" x2="-15.24" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="3"/>
 <wire x1="-15.24" y1="73.66" x2="-20.32" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="-7.62" y1="106.68" x2="-15.24" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="106.68" x2="-15.24" y2="93.98" width="0.1524" layer="91"/>
+<junction x="-15.24" y="93.98"/>
 </segment>
 </net>
 <net name="N$6" class="0">

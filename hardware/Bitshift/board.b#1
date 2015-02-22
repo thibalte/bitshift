@@ -156,7 +156,6 @@
 <wire x1="100" y1="100" x2="0" y2="100" width="0" layer="20"/>
 <wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
 <text x="3.81" y="93.98" size="1.778" layer="1">BITSHIFT / THIBAULT BREVET, 2015.</text>
-<text x="3.81" y="93.98" size="1.778" layer="25" font="vector">BITSHIFT / THIBAULT BREVET, 2015.</text>
 <text x="40.64" y="73.66" size="1.778" layer="25" font="vector" rot="R90">GND
 RST
 VCC
@@ -166,6 +165,8 @@ MOSI</text>
 <text x="50.8" y="67.31" size="1.778" layer="25" font="vector">HEAT</text>
 <text x="13.97" y="58.42" size="1.778" layer="25" font="vector">PWR</text>
 <text x="85.09" y="53.34" size="1.778" layer="25" font="vector">SHIFT</text>
+<text x="3.81" y="93.98" size="1.778" layer="25" font="vector">BITSHIFT / Thibault Brevet, 2015.</text>
+<text x="3.81" y="90.17" size="1.778" layer="25" font="vector">https://github.com/thibalte/bitshift</text>
 </plain>
 <libraries>
 <library name="SparkFun-DigitalIC">
