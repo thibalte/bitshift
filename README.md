@@ -6,6 +6,6 @@ Bitshift explores the physical manifestation of information. An array of black 1
 
 This project has been produced in the context of [Re-programmed art: an open manifesto](http://www.reprogrammed-art.cc/).
 
-## Technical details
+### Technical details
 
 PCBs have been sent to the fab house specifying a white soldermask, 35um copper thickness, all rest is standard. PCBs heating panel is designed to act as a 4 Ohm resistor, with a 12V power supply it sinks 3A and dissipates about 36W and warms 20°C above a target 21°C ambient temperature. The thermochromatic pigment used has a threshold temperature of 33°C, in line with the heating panel max temperature of 41°C.
