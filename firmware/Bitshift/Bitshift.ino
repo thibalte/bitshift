@@ -6,9 +6,9 @@
 // flash via Arduino IDE on ATTiny45/85 chips
 //
 
-int in = 1; // signal in
-int out = 2; // signal out
-int led = 0; // mosfet control
+int in = 3; // signal in
+int shift = 1; // signal out
+int heat = 2; // mosfet control
 
 int heatTime = 2000; // how long we heat the panel
 int sigTime = 500; // how long we keep the OUT signal pulled high
@@ -16,8 +16,8 @@ int sigTime = 500; // how long we keep the OUT signal pulled high
 void setup()
 {
   pinMode(in, INPUT);
-  pinMode(out, OUTPUT);
-  pinMode(led, OUTPUT);
+  pinMode(shift, OUTPUT);
+  pinMode(heat, OUTPUT);
 }
 
 void loop()
@@ -27,15 +27,15 @@ void loop()
   if (digitalRead(in)){
 
     // first turn on HEAT for specified time
-    digitalWrite(led, HIGH);
+    digitalWrite(heat, HIGH);
     delay(heatTime);
-    digitalWrite(led, LOW);
+    digitalWrite(heat, LOW);
     delay(100);
 
     // then forward SIGNAL for specififed time
-    digitalWrite(out, HIGH);
+    digitalWrite(shift, HIGH);
     delay(sigTime);
-    digitalWrite(out, LOW);
+    digitalWrite(shift, LOW);
     delay(100);
   }
 
