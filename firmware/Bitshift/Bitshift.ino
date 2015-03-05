@@ -10,7 +10,9 @@ int in = 3; // signal in
 int shift = 1; // signal out
 int heat = 2; // mosfet control
 
-int heatTime = 2000; // how long we heat the panel
+int heatTime = 15000; // how long we heat the panel
+
+int wait = 5000;
 int sigTime = 500; // how long we keep the OUT signal pulled high
 
 void setup()
@@ -26,11 +28,13 @@ void loop()
   // if we detect the input pin HIGH, we start the sequence
   if (digitalRead(in)){
 
-    // first turn on HEAT for specified time
+    // first turn on HEAT at maximum to reach temperature for specified time
     digitalWrite(heat, HIGH);
     delay(heatTime);
     digitalWrite(heat, LOW);
-    delay(100);
+    
+    // wait some time before shifting to next board
+    delay(wait);
 
     // then forward SIGNAL for specififed time
     digitalWrite(shift, HIGH);
