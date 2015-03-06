@@ -1,3 +1,5 @@
+![](etc/installation-view.jpg)
+
 # Bitshift
 
 Thibault Brevet, 2015.
