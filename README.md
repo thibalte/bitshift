@@ -2,8 +2,7 @@
 
 # Bitshift
 
-Thibault Brevet
-Bitshift, 2015
+Thibault Brevet, _Bitshift_, 2015
 
 16 printed circuit boards (10x10cm PCB, white soldermask), blue thermochromatic pigment, power supply.
 
